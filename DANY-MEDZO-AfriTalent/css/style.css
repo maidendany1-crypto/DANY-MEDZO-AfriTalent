@@ -1,0 +1,204 @@
+/* ==========================
+   VARIABLES CSS
+========================== */
+
+:root{
+    --primary-color:#0d6efd;
+    --secondary-color:#1b263b;
+    --accent-color:#00c896;
+    --light-color:#f8f9fa;
+    --dark-color:#212529;
+    --gray-color:#6c757d;
+
+    --title-font:'Space Grotesk', sans-serif;
+    --body-font:'Poppins', sans-serif;
+
+    --border-radius:12px;
+    --transition:0.3s;
+}
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:var(--body-font);
+    background-color:var(--light-color);
+    color:var(--dark-color);
+    line-height:1.6;
+}
+
+/* ==========================
+   TITRES
+========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:var(--title-font);
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:3rem;
+}
+
+h2{
+    font-size:2rem;
+}
+
+h3{
+    font-size:1.4rem;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+/* ==========================
+   LIENS
+========================== */
+
+a{
+    text-decoration:none;
+    color:var(--primary-color);
+}
+
+a:hover{
+    color:var(--accent-color);
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+nav{
+    background-color:white;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+    border-bottom:1px solid #ddd;
+}
+
+nav a{
+    color:var(--secondary-color);
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--primary-color);
+}
+
+/* ==========================
+   BOUTONS
+========================== */
+
+button{
+    background-color:var(--primary-color);
+    color:white;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:var(--border-radius);
+
+    cursor:pointer;
+
+    transition:var(--transition);
+}
+
+button:hover{
+    background-color:var(--accent-color);
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+    padding:60px 10%;
+}
+
+section:nth-child(even){
+    background-color:white;
+}
+
+/* ==========================
+   IMAGES
+========================== */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ==========================
+   ARTICLES
+========================== */
+
+article{
+    background-color:white;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:var(--border-radius);
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ==========================
+   FORMULAIRE
+========================== */
+
+input,
+select,
+textarea{
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:var(--border-radius);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background-color:var(--secondary-color);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+footer p{
+    margin:0;
+}
