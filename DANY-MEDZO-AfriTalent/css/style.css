@@ -538,3 +538,20 @@ footer p{
     font-weight:bold;
     margin-top:15px;
 }
+img{
+    max-width:100%;
+    height:auto;
+}
+body{
+    overflow-x:hidden;
+}
+@media(max-width:768px){
+
+    .freelances-grid,
+    .categories,
+    .pricing,
+    .team{
+        grid-template-columns:1fr;
+    }
+
+}
