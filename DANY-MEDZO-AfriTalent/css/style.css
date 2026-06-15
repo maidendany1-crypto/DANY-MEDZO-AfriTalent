@@ -202,3 +202,214 @@ footer{
 footer p{
     margin:0;
 }
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:50px;
+    min-height:80vh;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.1rem;
+    color:var(--gray-color);
+}
+
+.hero-buttons{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ==========================
+   STATS
+========================== */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.stat-card{
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.stat-card h3{
+    color:var(--primary-color);
+    font-size:2rem;
+}
+
+/* ==========================
+   BENTO GRID
+========================== */
+
+.bento-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.bento-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.bento-card:first-child{
+    grid-column:span 2;
+}
+
+.bento-card:nth-child(4){
+    grid-column:span 2;
+}
+
+/* ==========================
+   CATÉGORIES
+========================== */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.category-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+
+    transition:0.3s;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 25px rgba(0,0,0,0.15);
+}
+
+.category-card h3{
+    color:var(--primary-color);
+}
+
+/* ==========================
+   FREELANCES
+========================== */
+
+.freelances-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.freelance-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+
+    transition:0.3s;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.freelance-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ==========================
+   TARIFS
+========================== */
+
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.plan{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.popular{
+    border:3px solid var(--primary-color);
+    transform:scale(1.05);
+}
+
+/* ==========================
+   TEAM
+========================== */
+
+.team{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.member{
+    text-align:center;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .hero{
+        grid-template-columns:1fr;
+    }
+
+    .categories,
+    .pricing,
+    .freelances-grid,
+    .team,
+    .stats{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .categories,
+    .pricing,
+    .freelances-grid,
+    .team,
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .bento-grid{
+        grid-template-columns:1fr;
+    }
+}
