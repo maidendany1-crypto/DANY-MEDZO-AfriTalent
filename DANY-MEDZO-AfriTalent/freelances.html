@@ -80,18 +80,18 @@
     <label for="categorie">Filtrer par catégorie :</label>
 
     <select id="categorie">
-        <option>Toutes les catégories</option>
-        <option>Développement Web</option>
-        <option>Design UI/UX</option>
-        <option>Marketing Digital</option>
-        <option>Data & IA</option>
-        <option>DevOps & Cloud</option>
-    </select>
+    <option value="all">Toutes les catégories</option>
+    <option value="web">Développement Web</option>
+    <option value="design">Design UI/UX</option>
+    <option value="marketing">Marketing Digital</option>
+    <option value="data">Data & IA</option>
+    <option value="cloud">DevOps & Cloud</option>
+</select>
 </section>
 
 <section>
 
-   <article class="freelance-card card">
+   <article class="freelance-card" data-category="web">
         <h3>Awa Ndiaye</h3>
         <p>Développeuse Front-End</p>
         <p>25 €/heure</p>
@@ -100,7 +100,7 @@
 </button>
     </article>
 
-   <article class="freelance-card card">
+   <article class="freelance-card" data-category="web">
         <h3>Moussa Diallo</h3>
         <p>Développeur Back-End</p>
         <p>28 €/heure</p>
@@ -109,7 +109,7 @@
 </button>
     </article>
 
-    <article class="freelance-card card">
+    <article class="freelance-card" data-category="design">
         <h3>Jean Moukoko</h3>
         <p>UI Designer</p>
         <p>22 €/heure</p>
@@ -118,7 +118,7 @@
 </button>
     </article>
 
-    <article class="freelance-card card">
+    <article class="freelance-card" data-category="design">
         <h3>Aminata Ba</h3>
         <p>UX Designer</p>
         <p>20 €/heure</p>
@@ -145,7 +145,7 @@
 </button>
     </article>
 
-    <article class="freelance-card card">
+    <article class="freelance-card" data-category="marketing">
         <h3>Ibrahima Diop</h3>
         <p>Marketeur Digital</p>
         <p>18 €/heure</p>

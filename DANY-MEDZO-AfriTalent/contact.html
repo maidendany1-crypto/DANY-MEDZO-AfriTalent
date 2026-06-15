@@ -78,31 +78,28 @@
 
     <h1>Contactez-nous</h1>
 
-   <form id="contactForm">
+  <form id="contactForm">
 
     <div class="mb-3">
-        <label class="form-label" for="nom">Nom</label>
-        <input class="form-control" type="text" id="nom">
-    </div>
+        <label for="nom">Nom</label>
+    <input type="text" id="nom">
+    <small class="error" id="nomError"></small>
 
-    <div class="mb-3">
-        <label class="form-label" for="prenom">Prénom</label>
-        <input class="form-control" type="text" id="prenom">
-    </div>
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom">
+    <small class="error" id="prenomError"></small>
 
-    <div class="mb-3">
-        <label class="form-label" for="email">Email</label>
-        <input class="form-control" type="email" id="email">
-    </div>
+    <label for="email">Email</label>
+    <input type="email" id="email">
+    <small class="error" id="emailError"></small>
 
-    <div class="mb-3">
-        <label class="form-label" for="message">Message</label>
-        <textarea class="form-control" id="message" rows="5"></textarea>
-    </div>
+    <label for="message">Message</label>
+    <textarea id="message"></textarea>
+    <small class="error" id="messageError"></small>
 
-    <button class="btn btn-primary" type="submit">
-        Envoyer
-    </button>
+    <button type="submit">Envoyer</button>
+
+    <p id="successMessage"></p>
 
 </form>
 </section>

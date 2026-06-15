@@ -526,3 +526,15 @@ footer p{
 
     animation:fadeIn 1s ease;
 }
+.error{
+    color:red;
+    font-size:0.9rem;
+    display:block;
+    margin-bottom:10px;
+}
+
+#successMessage{
+    color:green;
+    font-weight:bold;
+    margin-top:15px;
+}
