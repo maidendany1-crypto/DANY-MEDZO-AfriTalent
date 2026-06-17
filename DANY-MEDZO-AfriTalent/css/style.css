@@ -271,10 +271,10 @@ footer p{
 }
 
 .bento-card{
-    background:white;
+    background:rgb(180, 177, 177);
     padding:30px;
     border-radius:20px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    box-shadow:0 4px 15px rgba(131, 130, 130, 0.08);
 }
 
 .bento-card:first-child{
@@ -296,7 +296,7 @@ footer p{
 }
 
 .category-card{
-    background:white;
+    background:rgb(180, 177, 177);
     padding:30px;
     border-radius:15px;
 
@@ -492,7 +492,7 @@ footer p{
 
     background:var(--primary-color);
 
-    color:white;
+    color:rgb(236, 233, 233);
 
     cursor:pointer;
 

@@ -27,3 +27,33 @@ Plateforme de mise en relation entre freelances tech africains et entreprises.
 ## Auteur
 
 Nom Prénom
+# AfriTalent
+
+Plateforme de mise en relation entre freelances tech africains et entreprises.
+
+## Technologies utilisées
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+
+## Fonctionnalités
+
+- Catalogue de freelances
+- Filtrage dynamique
+- Formulaire de contact validé
+- Design responsive
+- GitHub Pages
+
+## Démo en ligne
+
+https://tonpseudo.github.io/AfriTalent/
+
+## Captures d'écran
+
+![alt text](<Capture d'écran 2026-06-17 161205.png>)
+
+## Auteur
+
+Dany MEDZO
